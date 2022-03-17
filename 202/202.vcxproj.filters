@@ -18,5 +18,8 @@
     <ClCompile Include="C기본\03switch.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="04 함수의정의.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
