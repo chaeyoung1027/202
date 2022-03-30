@@ -3,8 +3,8 @@ using namespace std;
 
 void jiyuk(void)
 {
-	//지역변수는 함수 호출이 끝나면 사라짐(0으로 초기화를 시킴)
-	int a = 0;
+	//정적 지역변수는 선언되는 순간부터 계속 유지
+	static int a = 0; //정적(지역)변수
 	cout << "정적변수 a는 " << a << endl;
 	a++;
 }
@@ -12,6 +12,6 @@ void jiyuk(void)
 int main(void)
 {
 	jiyuk();   //0
-	jiyuk();   //0
-	jiyuk();   //0
+	jiyuk();   //1
+	jiyuk();   //2
 }
