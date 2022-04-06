@@ -4,7 +4,7 @@
 using namespace std;
 
 //pre 컴파일러가 처리
-//자료형에 영향받지 않음
+////자료형에 영향받지 않음
 #define jegop(A) ((A)*(A))
 
 int main(void)
