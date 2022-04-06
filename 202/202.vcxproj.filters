@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="c++기본\02-02 inline 함수.cpp">
+    <ClCompile Include="02-03참조.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
