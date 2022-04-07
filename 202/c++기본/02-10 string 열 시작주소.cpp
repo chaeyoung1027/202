@@ -10,13 +10,12 @@ using namespace std;
 
 int main(void)
 {
-	char cI[] = "aaa", cJ[] = "aaa", cK[] = "abc";
-	printf("%d\n", strcmp(cI, cJ) == 0);	//둘의 값이 같다면 true인 1이 나온다.
-	printf("%d\n", strcmp(cI, cK) < 0);		///cK가 더 크기 때문에 1이 나온다. 사전순으로!
+	char cI[10] = "aaa";
+	printf("%s\n", cI);				//문자열의 시작주소
 
-	string cppI = "aaa", cppJ = "aaa", cppK = "abc";	//원래 #include<string>을 써야한다.
-	cout << (cppI == cppJ) << endl;						//값이 같기 때문에 1 출력
-	cout << (cppI < cppK) << endl;						
+	string cppl = "aaa";
+	printf("%s \n", cppl.c_str());	//문자열의 시작주소
+
 
 	return 0;
 }
