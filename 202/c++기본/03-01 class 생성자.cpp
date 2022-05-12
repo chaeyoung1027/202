@@ -44,6 +44,7 @@ int main(void)
 {
 	Student* stu = new Student[6];
 	for (int i = 0; i < 6; i++)
+		//배열이므로 ->를 쓰지 않고, .으로 멤버접근
 		stu[i].show();
 	
 	delete[]stu;
