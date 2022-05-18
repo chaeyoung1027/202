@@ -11,6 +11,8 @@ public:
 	//string sName;
 	char* sName;
 	Student(int Hakbun, const char* name);
+
+	//소멸자 : 객체가 메모리에서 해제될 때 호출되는 함수
 	~Student();
 	void show(void);
 };
@@ -26,8 +28,6 @@ int main(void) {
 //   this->sName = name;
 //   cout << "학번이 등록 되었습니다." << endl;
 //}
-
-
 
 Student::Student(int Hakbun, const char* name)
 //객체 생성과 동시에 맴버변수 초기화   //멤버 변수(매개변수)
