@@ -15,8 +15,8 @@ public:
 	Point operator+(const Point& rhs)
 		{
 		Point p;
-		p.mX = mX, rhs.mX;
-		p.mY = mY, rhs.mY;
+		p.mX = mX + rhs.mX;
+		p.mY = mY+ rhs.mY;
 
 		return p;
 		}
