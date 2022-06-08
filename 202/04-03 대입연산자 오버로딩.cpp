@@ -23,7 +23,10 @@ public:
 	{
 		cout << "대입연산자 호출" << endl;
 		//기존에 존재하는 공간을 제거하고 새 공간 할당준비
-		delete[]sName;			//마감처리를 하지 않으면 메모리 누수가 일어난다.
+
+		if (sName != NULL) {
+			delete[]sName;
+		}
 
 		nHakbun = rhs.nHakbun;
 		int len = strlen(rhs.sName) + 1;
