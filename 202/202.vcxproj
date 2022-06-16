@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="c++기본\04-03 대입연산자 오버로딩.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="상속_풀어보기.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

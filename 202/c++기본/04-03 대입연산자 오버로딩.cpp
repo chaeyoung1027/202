@@ -16,7 +16,7 @@ public:
     Student(int Hakbun, const char* Name);
     Student(const Student& rhs);
 
-    //소멸자: 객체가 메모리에서 해제될 떄, 호출되는 함수
+    //소멸자: 객체가 메모리에서 해제될 때, 호출되는 함수
     ~Student();
 
     //연산자 오버로딩
@@ -118,5 +118,3 @@ Student::~Student()
     delete[]sName;
     cout << "Student 소멸자 호출" << endl;
 }
-
-
