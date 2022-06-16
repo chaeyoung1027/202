@@ -19,9 +19,4 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="상속_풀어보기.cpp">
-      <Filter>소스 파일</Filter>
-    </None>
-  </ItemGroup>
 </Project>
