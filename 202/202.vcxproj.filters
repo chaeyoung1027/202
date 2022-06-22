@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="c++기본\04-03 대입연산자 오버로딩.cpp">
+    <ClInclude Include="클래스 설계.cpp">
       <Filter>소스 파일</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>
