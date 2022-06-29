@@ -1,32 +1,46 @@
-#include <iostream>
 #include <string>
-
 using namespace std;
 
-class DOG
+class animal
 {
-private:
-	string Color;
-	string Name;
-
 public:
-	DOG(void);
-	DOG(string color, string name);
-	void show(void);
+	void 먹다();
+	void 달리다();
+
+private:
 };
 
-int main(void)
+class DOG : public animal
 {
-	DOG do1;
-	do1.show();
-	DOG do2 = DOG("골든리트리버.","황갈색");
-	do2.show();
+public:
+	void 짖다();
 
-	return 0;
-}
+private:
+	string size;
+	string Species;
+};
 
-DOG::DOG(string name, string color)
-	: Name(name),Color(color)
+class Golden : public DOG
 {
-	cout << "강아지의 종은 " << name << "이고 색은 " << color << "입니다." << endl;
-}
+public:
+	void 웃다();//생김새
+	void 사냥하다();
+	void 착하다();
+	void 활기차다();
+
+private:
+	string color;
+	string age;
+};
+
+class chihuahua : public DOG
+{
+public:
+	void 날카롭다();//성격
+	void 겁이없다();
+	void 용감하다();
+
+private:
+
+};
+
