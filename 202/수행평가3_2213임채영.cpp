@@ -34,8 +34,8 @@ m_string::m_string() {}
 m_string::m_string(const char* str)
 {
     //일반 생성자 호출
-    _Mysize = strlen(str) + 1;
-    _Myptr = new char[_Mysize];
+    _Mysize = strlen(str);
+    _Myptr = new char[_Mysize+1];
     strcpy(_Myptr, str);
 }
 
@@ -43,7 +43,6 @@ m_string::m_string(const m_string& rhs)
     : _Myptr(rhs._Myptr)
 {
     //복사 생성자 호출
-    _Mysize = strlen(rhs._Myptr) + 1;   //rhs._Mysize;
     _Myptr = new char[_Mysize];
     strcpy(_Myptr, rhs._Myptr);
 }
@@ -68,7 +67,7 @@ m_string& m_string::operator=(const m_string& rhs)
 m_string m_string::operator+(const m_string& rhs)
 {
     //덧셈 연산자 호출
-    char* str = new char[_Mysize + rhs._Mysize - 1];
+    char* str = new char[_Mysize + rhs._Mysize + 1];
     strcpy(str, _Myptr);
     strcat(str, rhs._Myptr);
     m_string temp(str);
@@ -85,7 +84,7 @@ int m_string::operator==(const m_string& rhs)
 
 int m_string::size(void)
 {
-    return strlen(_Myptr);
+    return _Mysize;
 }
 
 const char* m_string::c_str(void)
