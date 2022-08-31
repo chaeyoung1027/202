@@ -5,8 +5,11 @@ using namespace std;
 
 class Animal {
 public:
+	Animal() { cout << "Animal »ý¼º" << endl; }
+	~Animal() { cout << "Animal ¼Ò¸ê" << endl; }
+
 	void eat(void) { cout << "µ¿¹°¸Ô¾î" << endl; }
-	//roarÇÔ¼ö¸¦ °¡»óÇÔ¼öÅ×ÀÌºí¿¡ µî·Ï(µ¿Àû ¹ÙÀÎµù)
+	//roar ÇÔ¼ö¸¦ °¡»óÇÔ¼öÅ×ÀÌºí¿¡ µî·Ï(µ¿Àû ¹ÙÀÎµù)
 	virtual void roar(void) { cout << "µ¿¹°Â¢¾î" << endl; }
 	void walk(void) { cout << "µ¿¹°°É¾î" << endl; }
 
@@ -18,25 +21,23 @@ private:
 
 class Tiger : public Animal {
 public:
+	Tiger() { cout << "Tiger »ý¼º" << endl; }
+	~Tiger() { cout << "Tiger ¼Ò¸ê" << endl; }
+
 	void roar(void) { cout << "¾îÈï" << endl; }
 };
 
 class Dog : public Animal {
 public:
-	void roar(void) { cout << "¸Û¸Û" << endl; }
+	Dog() { cout << "Dog »ý¼º" << endl; }
+	~Dog() { cout << "Dog ¼Ò¸ê" << endl; }
+
+	void roar(void) override { cout << "¸Û¸Û" << endl; }
 };
 
 void main(void)
 {
-	Animal* animal = new Animal;
-	animal->roar();   //µ¿¹°Â¢¾î
+	Animal* animal = new Tiger();
 	delete animal;
 
-	Tiger* tiger = new Tiger;
-	tiger->roar();   //¾îÈï
-	delete tiger;
-
-	Dog* dog = new Dog;
-	dog->roar();      //¸Û¸Û
-	delete dog;
 }
