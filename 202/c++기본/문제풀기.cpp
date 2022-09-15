@@ -7,7 +7,7 @@ class PB
 {
 public:
 	PB() {}
-	PB(int name, int heart, int attack, int defense):Cname(name),Cheart(heart),Cattack(attack),Cdefense(defense){}
+	PB(string name, int heart, int attack, int defense):Cname(name),Cheart(heart),Cattack(attack),Cdefense(defense){}
 	
 private:
 	string Cname;
