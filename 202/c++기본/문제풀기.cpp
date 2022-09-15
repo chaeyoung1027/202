@@ -3,6 +3,7 @@
 
 using namespace std;
 
+template<typename T1, typename T2>
 class PB
 {
 public:
@@ -25,6 +26,6 @@ private:
 };
 
 int main(void) {
-	PB pb1 = { "채영", 100, 2, 1 };
-	pb1.print();
+	PB<int, string>* pb1 = new PB<int, string>("채영", 100, 2, 1);
+	pb1->print();
 }
