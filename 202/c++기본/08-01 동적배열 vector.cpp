@@ -17,17 +17,19 @@ int main(void) {
     //기존 공간에서 크기를 확장하여 삽입
     s3.push_back("ab");
 
+    vector<string>::iterator iter;
 
-    for (int i = 0; i < s3.size(); i++) {
-        cout << s3[i] << " ";
+    //벡터의 원소들을 출력(iterator)
+    for (iter = s3.begin(); iter != s3.end(); iter++) {
+        cout << *iter << " ";
     }
     cout << endl;
 
     s3[0] = "cd";
     s3.at(2) = "ef";
 
-    for (int i = 0; i < s3.size(); i++) {
-        cout << s3[i] << " ";
+    for (iter = s3.begin(); iter != s3.end(); iter++) {
+        cout << *iter << " ";
     }
     cout << endl;
 
