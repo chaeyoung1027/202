@@ -23,11 +23,17 @@ int main(void) {
     //삽입할 때마다 key는 자동정렬
     for (iter = m.begin(); iter != m.end(); iter++) {
         cout << (*iter).first << "의 키는" << (*iter).second << "cm이다." << endl;    //iter: 데이터 x 데이터를 가리키는 것
+    }
+    cout << endl;
+
+    m.erase("도경수");
+
+    for (iter = m.begin(); iter != m.end(); iter++) {
         cout << iter->first << "의 키는" << iter->second << "cm이다." << endl;
     }
     cout << endl;
 
-    map<string, string> ::iterator actor = m.find("김신");
+    map<string, string> ::iterator actor = m.find("박찬열");
 
     cout << "도경수" << m["170"] << endl;
     cout << "박찬열" << m["184"] << endl;
