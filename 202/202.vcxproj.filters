@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="c++기본\08-02map.cpp">
+    <ClCompile Include="c++기본\STL활동2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
