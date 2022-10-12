@@ -33,7 +33,7 @@ int main(void) {
     }
     cout << endl;
 
-    map<string, string> ::iterator actor = m.find("박찬열");
+    map<string, string> ::iterator member = m.find("박찬열");
 
     cout << "도경수" << m["170"] << endl;
     cout << "박찬열" << m["184"] << endl;
