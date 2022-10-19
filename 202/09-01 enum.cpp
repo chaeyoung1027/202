@@ -6,7 +6,8 @@ using namespace std;
 enum Food {
     KOREAN,     //한식(0)
     JAPANESE,   //일식(1)
-    CHINESE     //중식(2)
+    CHINESE,    //중식(2)
+    COUNT       //총갯수(3)
 };
 
 int main(void) {
