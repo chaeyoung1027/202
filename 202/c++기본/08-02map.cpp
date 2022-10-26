@@ -23,7 +23,7 @@ int main(void) {
     //벡터의 원소들을 출력(iterator)
     //삽입할 때마다 key는 자동정렬
     for (auto x : m) {
-        cout << x.first << "역"<<x.second<<"분"<<endl;
+        cout << x.first << "역" << x.second << "분" << endl;
     }
     cout << endl;
 
