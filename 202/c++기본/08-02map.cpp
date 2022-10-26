@@ -28,8 +28,6 @@ int main(void) {
     }
     cout << endl;
 
-    map<string, string> ::iterator actor = m.find("±è½Å");
-
     cout << "±è½Å¿ª" << m["±è½Å"] << endl;
     cout << "Àú½Â»çÀÚ¿ª" << m["Àú½Â»çÀÚ"] << endl;
     cout << "ÁöÀºÅ¹¿ª" << m["ÁöÀºÅ¹"] << endl;
